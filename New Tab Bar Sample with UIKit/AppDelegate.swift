@@ -14,6 +14,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+
+
+        // Control tab bar position.
+        // If upper tab bar is needed, these codes should be commented out.
+        // Referece: https://x.com/_silgen_name/status/1804554024680923458
+        UserDefaults.standard.register(defaults: [
+          "UseFloatingTabBar": false,
+        ])
+
         return true
     }
 
